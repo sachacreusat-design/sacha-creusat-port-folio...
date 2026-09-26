@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1faee;
+    color: #1d3557;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+/* --- BARRE SUPÉRIEURE --- */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d3557;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: #e63946;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+#btn-sombre {
+    padding: 8px 15px;
+    background-color: transparent;
+    color: #f1faee;
+    border: 2px solid #e63946;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-sombre:hover {
+    background-color: #e63946;
+}
+
+/* --- EN-TÊTE --- */
+.header-banner {
+    background-color: #e63946;
+    color: white;
+    padding: 60px 20px;
+    border-bottom: 8px solid #1d3557;
+}
+
+.banner-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #1d3557;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.banner-text h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.banner-text .subtitle {
+    font-weight: 700;
+    font-size: 1.2em;
+    background-color: #1d3557;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+/* --- CONTENU & GRILLE --- */
+.main-content {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    color: #e63946;
+    text-transform: uppercase;
+    border-left: 5px solid #1d3557;
+    padding-left: 15px;
+    margin-top: 0;
+}
+
+/* --- SIDEBAR COMPÉTENCES --- */
+.skills-sidebar {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills-list li:last-child {
+    border-bottom: none;
+}
+
+.icon {
+    font-size: 1.5em;
+}
+
+/* --- CARTES EXPÉRIENCES --- */
+.exp-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    border-top: 4px solid #1d3557;
+    transition: 0.3s;
+}
+
+.exp-card:hover {
+    transform: translateX(10px);
+    border-top-color: #e63946;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 2px solid #f1faee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.exp-header h3 {
+    margin: 0;
+    color: #1d3557;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+}
+
+.location {
+    font-weight: 700;
+    color: #e63946;
+    font-size: 0.9em;
+}
+
+.company {
+    font-weight: 700;
+    color: #457b9d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- PIED DE PAGE --- */
+.footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 50px;
+}
+
+.footer h2 {
+    color: white;
+    border-left: none;
+    padding: 0;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #e63946;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: white;
+    color: #e63946;
+}
+
+/* --- MODE SOMBRE --- */
+body.mode-sombre {
+    background-color: #0b1320;
+    color: #a8b2d1;
+}
+
+body.mode-sombre .skills-sidebar,
+body.mode-sombre .exp-card {
+    background-color: #112240;
+    box-shadow: none;
+}
+
+body.mode-sombre h2 {
+    color: #ff6b6b;
+}
+
+body.mode-sombre .exp-header h3 {
+    color: #e6f1ff;
+}
+
+body.mode-sombre .skills-list li {
+    border-bottom-color: #1d3557;
+}
+
+/* --- ANIMATION RAQUETTE PING PONG --- */
+.animation-pingpong {
+    font-size: 45px;
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    z-index: 1000;
+    transform-origin: bottom right;
+    animation: coup-raquette 1.2s infinite alternate ease-in-out;
+}
+
+@keyframes coup-raquette {
+    0% { transform: rotate(-30deg); }
+    100% { transform: rotate(30deg); }
+}
+
+/* Adaptabilité pour téléphones */
+@media (max-width: 768px) {
+    .banner-content { flex-direction: column; text-align: center; }
+    .grid-container { grid-template-columns: 1fr; }
+    .exp-header { flex-direction: column; }
+}
