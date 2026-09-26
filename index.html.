@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sacha Creusat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <span class="logo">SC.</span>
+        <button id="btn-sombre">Mode sombre</button>
+    </div>
+
+    <header class="header-banner">
+        <div class="banner-content">
+            <img src="photo_sacha.jpg" alt="Portrait de Sacha Creusat" class="profile-img">
+            <div class="banner-text">
+                <h1>Sacha Creusat</h1>
+                <p class="subtitle">19 ans | Étudiant en ESDHEM 2 Économie-Gestion (SKEMA Lille)</p>
+                <p class="bio">Étudiant engagé, motivé et résolument tourné vers l'international. Fort d'une expérience en entreprise à l'étranger et d'un fort esprit d'équipe développé par le sport associatif, je m'investis pleinement dans chaque projet que j'entreprends.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="grid-container">
+            <!-- Colonne de gauche : Compétences -->
+            <aside class="skills-sidebar">
+                <h2>Profil & Compétences</h2>
+                <ul class="skills-list">
+                    <li><span class="icon">💪</span> Grand travailleur</li>
+                    <li><span class="icon">🔥</span> Hautement motivé</li>
+                    <li><span class="icon">🤝</span> Esprit d'équipe</li>
+                    <li><span class="icon">🌍</span> Anglais courant (Niveau B2)</li>
+                </ul>
+            </aside>
+
+            <!-- Colonne de droite : Expériences -->
+            <section class="experiences-section">
+                <h2>Parcours & Expériences</h2>
+                
+                <article class="exp-card">
+                    <div class="exp-header">
+                        <h3>Stagiaire en Courtage d'Assurance</h3>
+                        <span class="location">Manchester, UK</span>
+                    </div>
+                    <p class="company">Verlingue</p>
+                    <p>Immersion dans le secteur de l'assurance à l'international. Développement de la rigueur professionnelle, analyse de dossiers et pratique quotidienne de l'anglais en milieu corporatif.</p>
+                </article>
+
+                <article class="exp-card">
+                    <div class="exp-header">
+                        <h3>Bénévole Associatif</h3>
+                        <span class="location">Club de Tennis de Table</span>
+                    </div>
+                    <p class="company">Engagement sportif</p>
+                    <p>Participation active à la vie du club, encadrement, aide à l'organisation des tournois et développement d'un fort esprit d'entraide et d'équipe.</p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h2>Contactez-moi</h2>
+        <p>Prêt à relever de nouveaux défis professionnels.</p>
+        <a href="mailto:sacha.creusat@exemple.com" class="contact-btn">Envoyer un message</a>
+    </footer>
+
+    <div class="animation-pingpong">🏓</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
